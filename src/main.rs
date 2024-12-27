@@ -1,6 +1,7 @@
-mod shadow;
+mod core;
+mod utils;
 
-use crate::shadow::engine::Engine;
+use crate::core::engine::Engine;
 
 fn main() {
     let input_file = "input.js";
