@@ -7,9 +7,7 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Configuration](#configuration)
 - [License](#license)
-- [Contributing](#contributing)
 
 ## Features
 
