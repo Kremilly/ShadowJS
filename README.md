@@ -20,7 +20,7 @@
 To use **ShadowJS**, you'll need to have **Rust** installed on your system. If you don't have it yet, follow the instructions on the official [Rust website](https://www.rust-lang.org/).
 
 ```bash
-cargo install dumpsync
+cargo install shadowjs
 ```
 
 ## Usage
