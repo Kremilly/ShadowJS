@@ -8,7 +8,6 @@ categories = ["command-line-utilities", "security", "dev-tools"]
 keywords = ["javascript", "obfuscator", "security", "performance", "rust"]
 description = "ShadowJS is a fast, lightweight JavaScript obfuscator built with Rust. It protects your code by converting readable identifiers into obscure formats, ensuring security without sacrificing performance."
 repository = "https://github.com/kremilly/ShadowJS"
-documentation = "https://kremilly.com/docs/shadowjs/"
 homepage = "https://kremilly.com"
 
 [dependencies]
@@ -16,6 +15,3 @@ colored = "2.2.0"
 figlet-rs = "0.1.5"
 rand = "0.8.5"
 regex = "1.11.1"
-serde = "1.0.216"
-serde_json = "1.0.134"
-tokio = { version = "1.42.0", features = ["full"] }

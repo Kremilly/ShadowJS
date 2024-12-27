@@ -1,3 +1,6 @@
+extern crate colored;
+
+use colored::*;
 use regex::Regex;
 
 use std::{
@@ -58,7 +61,7 @@ impl Engine {
         let minified = JS.minify(input);
 
         fs::write(&self.output, minified).expect("Error writing output file.");
-        println!("Obfuscated and minified successfully! File saved to {}", &self.output);
+        println!("=> Obfuscated and minified successfully! File saved to {}", &self.output.cyan().bold());
     }
 
 }
