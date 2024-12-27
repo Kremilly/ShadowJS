@@ -12,7 +12,6 @@
 ## Features
 
 - **Fast and Lightweight**: Built with Rust for maximum performance and efficiency.
-- **Customizable Obfuscation**: Generates random identifiers to obscure your JavaScript code.
 - **Security Focused**: Helps protect your code from tampering by converting identifiers into cryptic formats.
 - **Easy to Use**: Command-line interface for quick and simple integration.
 
