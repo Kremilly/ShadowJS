@@ -25,7 +25,7 @@ cargo install shadowjs
 
 ## Usage
 
-After building the project, you can run **ShadowJS** from the command line by providing the path to the input and output JavaScript files. Here's how to use it:
+You can run **ShadowJS** from the command line by providing the path to the input and output JavaScript files. Here's how to use it:
 
 ### Command Syntax
 
