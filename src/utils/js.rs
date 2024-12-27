@@ -1,5 +1,7 @@
 use regex::Regex;
 
+use crate::constants::regexp::RegExp;
+
 pub struct JS;
 
 impl JS {
@@ -18,10 +20,10 @@ impl JS {
     }
 
     pub fn minify(&self, input: &str) -> String {
-        let re_space = Regex::new(r"\s+").unwrap();
+        let re_space = Regex::new(RegExp::SPACES).unwrap();
         let minified = re_space.replace_all(input, " ");
     
-        let re_comments = Regex::new(r"(?s)/\*.*?\*/|//.*?$").unwrap();
+        let re_comments = Regex::new(RegExp::COMMENTS).unwrap();
         let minified = re_comments.replace_all(&minified, "");
     
         minified.trim().to_string()

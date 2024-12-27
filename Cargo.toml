@@ -2,9 +2,16 @@
 name = "ShadowJS"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+authors = ["kremilly"]
+categories = ["command-line-utilities", "security", "dev-tools"]
+keywords = ["javascript", "obfuscator", "security", "performance", "rust"]
+description = "ShadowJS is a fast, lightweight JavaScript obfuscator built with Rust. It protects your code by converting readable identifiers into obscure formats, ensuring security without sacrificing performance."
+repository = "https://github.com/kremilly/ShadowJS"
+documentation = "https://kremilly.com/docs/shadowjs/"
+homepage = "https://kremilly.com"
 
 [dependencies]
-clap = "4.5.23"
 colored = "2.2.0"
 figlet-rs = "0.1.5"
 rand = "0.8.5"

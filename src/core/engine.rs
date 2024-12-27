@@ -5,9 +5,13 @@ use std::{
     collections::HashMap
 };
 
-use crate::utils::{
-    js::JS,
-    random::Random
+use crate::{
+    constants::regexp::RegExp,
+
+    utils::{
+        js::JS,
+        random::Random
+    },
 };
 
 pub struct Engine {
@@ -28,7 +32,7 @@ impl Engine {
         let content = fs::read_to_string(&self.input).expect("Error reading input file.");
 
         let mut replacements: HashMap<String, String> = HashMap::new();
-        let re_identifiers = Regex::new(r"\b[a-zA-Z_][a-zA-Z0-9_]*\b").unwrap();
+        let re_identifiers = Regex::new(RegExp::IDENTIFIERS).unwrap();
 
         let obfuscated = re_identifiers.replace_all(&content, |caps: &regex::Captures| {
             let identifier = &caps[0];

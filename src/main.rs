@@ -1,12 +1,17 @@
+mod ui;
 mod core;
 mod utils;
+mod constants;
 
 use std::{
     env, 
     process
 };
 
-use crate::core::engine::Engine;
+use crate::{
+    ui::ui_base::UI,
+    core::engine::Engine,
+};
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -18,6 +23,9 @@ fn main() {
 
     let input_file = &args[1];
     let output_file = &args[2];
+
+    UI::header();
+    UI::section_header("Obfuscating JavaScript", "info");
 
     let _ = Engine::new(input_file, output_file).run();
 }
