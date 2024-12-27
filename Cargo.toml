@@ -1,0 +1,13 @@
+[package]
+name = "ShadowJS"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = "4.5.23"
+figlet-rs = "0.1.5"
+rand = "0.8.5"
+regex = "1.11.1"
+serde = "1.0.216"
+serde_json = "1.0.134"
+tokio = { version = "1.42.0", features = ["full"] }
